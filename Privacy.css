@@ -1,0 +1,157 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+   
+
+.header {
+    border-bottom: 1px solid;
+ }
+ 
+ .search {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    right: 100px;
+    top: 20px;
+  }
+
+  .search svg {
+    position: absolute;
+    right: 15px;
+  }
+
+  #searchInput {
+    padding: 10px;
+    width: 1000px; 
+    height: 30px; 
+    font-size: 16px; 
+    border: none;
+    background-color: #dcdcdc;
+    border-radius: 5px;   
+    margin: 0;
+  }
+  
+  #searchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .header img {
+    display: flex;
+    position: relative;
+    height: 60px;
+    width: 800px;
+    right: 330px;
+    bottom: 20px;
+  }
+
+  .text1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .text2 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .text3 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .text4 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .text1 h1 {
+    font-size: 35px;
+    position: relative;
+    left: 10px;
+  }
+
+  .text2 h1 {
+    font-size: 35px;
+    position: relative;
+    left: 10px;
+  }
+
+  .text3 h1 {
+    font-size: 35px;
+    position: relative;
+    left: 10px;
+  }
+
+  .text4 h1 {
+    font-size: 35px;
+    position: relative;
+    left: 10px;
+  }
+
+  .text1 p {
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+  }
+
+  .text2 p {
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+  }
+
+  .text3 p {
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+  }
+
+  .text4 p {
+    position: relative;
+    bottom: 15px;
+    left: 10px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333; 
+    color: white; 
+    padding: 10px; 
+  }
+
+  .footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .footer ul li {
+    margin-right: 10px; 
+  }
+
+  .footer ul li:last-child {
+    margin-right: 0; 
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: #c6c6c6;
+  }
+
+
+  .footer a:hover {
+    text-decoration: none;
+    color: #c6c6c6;
+    font-weight: bolder;
+  } 
+
+  .footer p {
+    color: #c6c6c6;
+    position:relative;
+    top: -5px;
+    right: 925px;
+  }

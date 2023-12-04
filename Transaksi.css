@@ -1,0 +1,331 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+ 
+ .header {
+    border-bottom: 1px solid;
+ }
+ 
+ .search {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: flex-end;
+    right: 100px;
+    top: 20px;
+  }
+
+  .search svg {
+    position: absolute;
+    right: 15px;
+  }
+
+  #searchInput {
+    padding: 10px;
+    background-color: #dcdcdc;
+    width: 1000px; 
+    height: 30px; 
+    font-size: 16px; 
+    border: none;
+    border-radius: 5px;   
+    margin: 0;
+  }
+  
+  #searchButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .header img {
+    display: flex;
+    position: relative;
+    height: 60px;
+    width: 800px;
+    right: 330px;
+    bottom: 20px;
+  }
+
+  .Transaksi {
+    border: 1px solid;
+  }
+
+  .Pilihan img {
+    height: 500px;
+    width: 650px;
+  }
+
+  .Keranjang {
+    display: flex;
+    position: absolute;
+    top: 120px;
+    left: 650px;
+  }
+  
+  .Keranjang ul {
+    list-style-type: none;
+  }
+
+  .Keranjang ul li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-bottom: 10px;
+  }
+
+  .dropdown {
+    position: absolute;
+    left: 20px;
+    top: 120px;
+    width: 110px;
+    margin: 20px;
+  }
+
+  .dropdown select {
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .Keranjang button,
+  .modal-box {
+    position: absolute;
+    top: 200px;
+    left: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold; font-size: 15px;
+    text-align: center;
+    padding-left: 10px; padding-right: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    gap: 8px;
+  }
+
+  .deskripsi {
+    position: absolute;
+    top: 260px;
+  }
+
+  h1 {
+    margin-top: 50px;
+    margin-left: 40px;
+    color: #000;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  .rekomendasi {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 20px; 
+    padding-left: 40px; 
+  }
+
+  .rekomendasi::-webkit-scrollbar{
+    width: 0;
+  }
+  
+  .overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal-box {
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 400px;
+    padding: 30px;
+    left: 400px;
+    border: 2px solid black;
+  }
+
+  .modal-box[aria-modal=false] {
+    display: none;
+  }
+
+  .modal-box .close {
+    position: absolute;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+    line-height: .1px;
+    top: -10px;
+    right: -10px;
+    background-color: white;
+    border: solid 2px black;
+    cursor: pointer;
+  }
+
+  .modal-box img {
+    height: 150px;
+    width: 150px;
+    border: 1px solid black;
+  }
+
+  .modal-box h1 {
+    display: inline;
+    font-size: 15px;
+    position: absolute;
+    top: -25px;
+    left: 2px;
+  }
+
+  .modal-box p {
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 10px;
+    bottom: 20px;
+  }
+
+  .modal-box ul li {
+    color: black;
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+  }
+
+  .Inside-box button {
+    color: white;
+    position: relative;
+    left: 5px;  
+    font-size: 15px;
+    background-color: #000000;
+    width: 180px;
+    height: 40px;
+  }
+
+  .Inside-box button p {
+    color: white;
+    position: relative;
+    top: -12px;
+    left: -24px;
+  }
+
+  .Inside-box button svg {
+    position: relative;
+    top: -60px;
+    left: 60px;
+    color: #000;
+  }
+
+  .Inside-box span {
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    bottom: 2px;
+    right: 9px;
+  }
+
+  .Inside-box svg {
+    position: relative;
+    left: 8px;
+    bottom: -2px;
+  }
+
+  .card {
+    flex: 0 0 auto; 
+    width: 200px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    overflow: hidden;
+    object-fit: cover;
+    filter: brightness(100%) grayscale(90%);
+    transition: 0.5s;
+  }
+
+  .card:hover {
+    filter: brightness(80%);
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block; 
+  }
+
+  .card a {
+    text-decoration: none;
+    color: #000;
+  }
+
+  .card p {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    position: relative;
+    right: -10px
+  }
+
+  .Kata {
+    background-color: #3e3e3e;
+    font-size: larger;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333; 
+    color: white; 
+    padding: 10px; 
+  }
+
+  .footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  .footer ul li {
+    margin-right: 10px; 
+  }
+
+  .footer ul li:last-child {
+    margin-right: 0; 
+  }
+
+  .footer a {
+    text-decoration: none;
+    color: #c6c6c6;
+  }
+
+
+  .footer a:hover {
+    text-decoration: none;
+    color: #c6c6c6;
+    font-weight: bolder;
+  } 
+
+  .footer p {
+    color: #c6c6c6;
+    position:relative;
+    top: -10px;
+    right: 925px;
+  }
+
+  
+
+  
+  
+  
+  
+  

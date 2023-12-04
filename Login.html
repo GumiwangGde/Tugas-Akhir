@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login Page</title>
+</head>
+<body>
+    <h>Tally Est 22.</h>
+    <img src="asset/logo.svg">
+    <div class="navbar">
+        <ul>
+            <li><a href="https://drive.google.com/drive/folders/1mozOoON2rwTPd5sMhd-BQHqRML8Zhck8">About us</a></li>
+            <li><a href="https://drive.google.com/drive/folders/1mozOoON2rwTPd5sMhd-BQHqRML8Zhck8">Help</a></li>
+        </ul>
+    </div>
+    <div class="login-container">
+        <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" 
+            placeholder="Password" required>
+            <a href="Homepage.html">Forget Password</a>
+            <a href="Homepage.html"><p>Create Account</p></a>
+        </form>
+    </div>
+    <div class="button">
+        <a href="Homepage.html">Login</a>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+    const loginForm = document.getElementById("login-form");
+
+    loginForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "user" && password === "password") {
+            alert("Login berhasil!");
+        } else {
+            alert("Login gagal. Coba lagi.");
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
